@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.print-html {
+  display: flex;
+  flex-direction: column;
+  height: 284px;
+  width: 378px;
+  background-color: #eee;
+  padding: 12px;
+  color: #333;
+}
+
+.print-html > div:last-child {
+  flex: 1;
+}
+
+.print-html .qr-code-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.print-html .qr-code-info {
+  display: flex;
+  flex: 1;
+  margin-left: 8px;
+  flex-direction: column;
+}
+
+.print-html .qr-code-info img {
+  max-height: 26px;
+  max-width: auto;
+}
+
+.print-html .info-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.print-html .info-line.sensive {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.print-html .qr-code-info .iata,
+.print-html .qr-code-info .postcode {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.print-html .qr-code-info .route-info {
+  display: block;
+  width: 96px;
+}
+
+.print-html .qr-code-info .partner-name {
+  flex: 1;
+  margin-top: 8px;
+  margin-right: 26px;
+  /* border-top: 3px solid #333; */
+  font-size: 14px;
+}
+
+.print-html .order-info {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.print-html .order-info div {
+  flex: 1;
+}
+.print-html .order-info div + div {
+  margin-left: 16px;
+}
+
+.print-html .order-info .order-details {
+  font-size: 12px;
+}
+
+.print-html .order-info .order-details + .order-details {
+  margin-top: 8px;
+}
+
+.print-html .barcode-area {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.print-html .barcode-area > svg {
+  max-width: 100% !important;
+  height: auto;
+}
